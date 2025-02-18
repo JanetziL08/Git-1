@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Pertama</title>
+    <style>
+        table {
+            background-color: lightskyblue;
+            margin: auto;
+        }
+        td {
+            padding: 6px;
+        }
+        form {
+            text-align: left;
+        }
+        body {
+            background-image: url("https://simplified.com/siteimages/design/hero-image-alice-blue-colors.jpg");
+        }
+        textarea[name="hobby"] {
+            width: 300px; 
+            height: 150px;
+            font-family: "Fira Code", monospace; 
+            font-size: medium;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>
+                <h1 align="center"><b>BIODATA</b></h1>
+                <hr>
+                <form action="/action_page.php">
+                    <label for="Name">Name: </label>
+                    <input type="text" id="Name" name="Name"><br><br>
+                    <label for="pwd">Password: </label>
+                    <input type="password" id="pwd" name="pwd"><br><br>
+                    
+                    <label>Sex: </label>
+                    <input type="radio" id="male" name="sex" value="M">
+                    <label for="male">M</label>
+                    <input type="radio" id="female" name="sex" value="F">
+                    <label for="female">F</label><br><br>
+                    
+                    <label><i><u>Marital status:</u></i></label>
+                    <input type="checkbox" id="married" name="marital_status" value="Married">
+                    <label for="married">Married</label>
+                    <input type="checkbox" id="children" name="marital_status" value="Children">
+                    <label for="children">Children</label><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="hobby">Hobby:</label><br>
+                <textarea id="hobby" name="hobby"></textarea><br><br>
+                
+                <label for="income">Income:</label>
+                <select id="income" name="income">
+                    <option value="under 50k">under $50k</option>
+                </select><br><br>
+                
+                <button type="submit">Validate</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
